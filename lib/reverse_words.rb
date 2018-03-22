@@ -15,8 +15,8 @@ def reverse_words(my_words)
     end
 
     if i == my_words.length - 1
-    	end_index = i
-    	my_words = reverse_string(my_words, start_index, end_index)
+      end_index = i
+      my_words = reverse_string(my_words, start_index, end_index)
     end
   end
 
@@ -24,14 +24,14 @@ def reverse_words(my_words)
 end
 
 def reverse_string(string, start_index, end_index)
-	i = start_index
-	j = end_index
-	while i < j
-		temp = string[i]
-  	string[i] = string[j]
-		string[j] = temp
-		i += 1
-  	j -= 1
+  i = start_index
+  j = end_index
+  while i < j
+    temp = string[i]
+    string[i] = string[j]
+    string[j] = temp
+    i += 1
+    j -= 1
   end
 
   return string
