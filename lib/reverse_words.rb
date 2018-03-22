@@ -27,7 +27,7 @@ def reverse_string(string, start_index, end_index)
 	i = start_index
 	j = end_index
 	while i < j
-		temp = string[i]
+	  temp = string[i]
   	string[i] = string[j]
 		string[j] = temp
 		i += 1
